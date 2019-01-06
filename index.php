@@ -21,4 +21,4 @@ $logData = [
     'request' => print_r($_REQUEST)
 ];
 
-$redis->set(md5($logData . rand(10000)), $logData);
+$redis->set(md5($logData . rand()), $logData);
